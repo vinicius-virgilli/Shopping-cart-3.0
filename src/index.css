@@ -11,3 +11,133 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+header {
+  background-image: linear-gradient(to right, rgb(0, 59, 2), rgb(0, 180, 9));
+  color: white;
+  position: fixed;
+  top: 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 70px;
+  width: 100vw;
+}
+
+.logo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 270px;
+}
+
+.searchField {
+  display: flex;
+  align-items: center;
+  height: 40px;
+  box-shadow: 0 0 7px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  background-color: white;
+}
+
+.searchField input {
+  border-radius: 5px;
+  border: none white;
+  padding-left: 20px;
+  height: 40px;
+  width: 25vw;
+  box-sizing: border-box;
+  color: black;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.searchField button {
+  margin: 0;
+  padding: 3px 15px 3px 15px;
+  height: 40px;
+  color: rgb(65, 25, 127);
+  border-radius: 5px;
+  border-left: 2px solid rgba(2, 122, 14, 0.2);
+  border-bottom: none;
+  border-top: none;
+  border-right: none;
+  background-color: white;
+  cursor: pointer;
+}
+
+.searchField button:hover {
+  background-color: green;
+  transition: 0.3s;
+  box-shadow: 0 0 0.2rem white,
+    0 0 0.2rem rgb(255, 255, 255),
+    0 0 1.4rem -5px rgb(53, 246, 0),
+    0 0 0.8rem -5px rgb(43, 197, 0),
+    0 0 2.4rem -5px rgb(12, 187, 3),
+    inset 0 0 2rem rgb(3, 198, 0);
+}
+
+.searchField button img {
+  height: 26px;
+}
+
+.iconeCart {
+  width: auto;
+  height: 50px;
+  background-color: white;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.25);
+  z-index: 1;
+  border-radius: 10px;
+  box-shadow: 0 0 0.2rem rgb(50, 149, 1),
+    0 0 0.2rem rgb(35, 131, 0),
+    0 0 1.4rem -5px rgb(255, 255, 255),
+    0 0 0.8rem -5px rgb(255, 255, 255),
+    0 0 2.4rem -5px rgb(255, 255, 255),
+    inset 0 0 2rem rgb(255, 255, 255);
+}
+
+.iconeCart:hover {
+  background-color: green;
+
+  cursor: pointer;
+  transition: 0.3s;
+  box-shadow: 0 0 0.2rem white,
+    0 0 0.2rem rgb(255, 255, 255),
+    0 0 1.4rem -5px rgb(53, 246, 0),
+    0 0 0.8rem -5px rgb(43, 197, 0),
+    0 0 2.4rem -5px rgb(3, 131, 3),
+    inset 0 0 2rem rgb(255, 255, 255);
+}
+
+header img {
+  height: 50px;
+}
+
+.mainContainer {
+  margin-top: 70px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.resultsOfSearch {
+  display: flex;
+  flex-flow: wrap;
+  width: 80vw;
+  margin-left: 20vw;
+  border: 1px solid black;
+}
+
+.categories {
+  position: fixed;
+  width: 20vw;
+  border: 1px solid black;
+}
+
+.productSearched {
+  display: flex;
+  width: 270px;
+  flex-direction: column;
+  margin: 20px;
+  padding: 20px;
+  border: 1px solid black;
+}
